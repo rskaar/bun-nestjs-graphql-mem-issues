@@ -18,7 +18,7 @@ Tested with Bun v1.1.21 and NodeJS v22.3.0.
 
 1. Build and start the project by running `bun run build-node && bun ./dist/main.js`
 2. Generate traffic to the server `http://localhost:3000/`. A simple tool for
-   this is available in the `tools` folder. Run `node simple-traffic-test.js` to
+   this is available in the `tools` folder. Run `node tools/simple-traffic-test.js` to
    generate 300.000 requests to the server (will be executed one by one).
 3. Monitor the memory comsumption of the bun-process. It will grow with each
    request.
@@ -34,7 +34,7 @@ GraphQL endpoints as this is available at `http://localhost:3000/graphql`.
 3. Build and start the project by running `bun run build-node && bun
 ./dist/main.js`
 4. Generate traffic to the server `http://localhost:3000/`. A simple tool for
-   this is available in the `tools` folder. Run `node simple-traffic-test.js` to
+   this is available in the `tools` folder. Run `node tools/simple-traffic-test.js` to
    generate 300.000 requests to the server (will be executed one by one).
 5. Monitor the memory comsumption of the bun-process. It will remain stable.
 
@@ -50,6 +50,6 @@ The memory leak problem is still present when using this build step.
 
 1. Build and start the project by running `npm run build-node && node ./dist/main.js`
 2. Generate traffic to the server `http://localhost:3000/`. A simple tool for
-   this is available in the `tools` folder. Run `node simple-traffic-test.js` to
+   this is available in the `tools` folder. Run `node tools/simple-traffic-test.js` to
    generate 300.000 requests to the server (will be executed one by one).
 3. Monitor the memory comsumption of the node-process. It will remain stable.
